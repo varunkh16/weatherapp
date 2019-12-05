@@ -1,0 +1,15 @@
+<header>
+    <mat-card>
+        <form [formGroup]="form" (submit)="onCheckWeather()">
+            <mat-form-field>
+                    <input matInput type="text" formControlName="country" placeholder="Enter Country">
+                    <mat-error *ngIf="form.get('country').invalid">Please enter a country.</mat-error>
+            </mat-form-field>
+            <button mat-raised-button color="accent" type="submit" class="flex">Search Weather</button>
+        </form>
+        <p>{{errorString}}</p>
+    </mat-card>
+</header>
+<main>
+  <app-weather (errorEve)="onError($event)"></app-weather>
+</main>

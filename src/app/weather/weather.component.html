@@ -1,0 +1,22 @@
+<mat-tab-group>
+    <mat-tab label="weather">
+        <h1>Local Time: {{localTime}}</h1>
+        <img src="{{weatherIcon}}" width="20%"/>
+        <h1>Description: {{weatherDescription}}</h1>
+    </mat-tab>
+    <mat-tab label="temperature">
+        <h1>Temperature: {{temperature}}</h1>
+        <h1>Humidity: {{humidity}}</h1>
+        <h1>Visibility: {{visibility}}</h1>
+    </mat-tab>
+    <mat-tab label="wind">
+        <h1>Wind Speed: {{windSpeed}}</h1>
+        <h1>Wind Degree: {{windDegree}}</h1>
+        <h1>Wind Direction: {{windDirection}}</h1>
+    </mat-tab>
+    <mat-tab label="feel">
+        <h1>Place: {{place}}</h1>
+        <h1>Region: {{region}}</h1>
+        <h1>Feel: {{feelsLike}}</h1>
+    </mat-tab>
+</mat-tab-group>
