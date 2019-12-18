@@ -48,12 +48,10 @@ export class WeatherComponent implements OnInit, OnDestroy {
         this.region = this.weatherData.location.region;
         this.feelsLike = this.weatherData.current.feelslike;
         } else {
-          console.log("in else block");
           this.errorEve.emit("Please enter a valid country!!");  
         }
       },
       error=>{
-        console.log("in error block");
         this.errorEve.emit("Please enter a valid country!!");
       })
     });
